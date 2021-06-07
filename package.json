@@ -7,5 +7,10 @@
   },
   "author": "Narmina Aghayeva",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "jqeury": "0.0.1-security",
+    "popper.js": "^1.16.1"
+  }
 }
