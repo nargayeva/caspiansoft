@@ -4,18 +4,54 @@
 <head>
     <meta charset="UTF-8">
     <title>Caspian Soft</title>
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link href="./assets/css/main.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel = "icon" href = 
+    "./assets/images/icon.png" 
+            type = "image/x-icon">
+    <link href="assets/scss/main.css" rel="stylesheet" type="text/css" />
     <script href="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <h1>Hello World!</h1>
+    <div class="container mt-4">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/images/logo.png" height="30" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <ul class="navbar-nav justify-content-end collapse navbar-collapse" id="navbarNav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">about us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">techBlogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-outline-warning fw-bold" id="button" href="#" type="button">get in touch</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">az</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
     <script href="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
 </body>
 
 </html>

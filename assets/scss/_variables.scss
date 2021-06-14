@@ -1,0 +1,30 @@
+@font-face {
+    font-family: GothamRegular;
+    //src: url("../fonts/gotham/Gotham-Book.otf");
+}
+
+@font-face {
+    font-family: GothamBold;
+    //src: url("../fonts/gotham/Gotham-Bold.otf");
+}
+
+// colors
+$bg-color: #242424;
+$yellow-color: #FFC82D;
+$blue-color: #566CB3;
+$white-color: #FFFFFF;
+
+// sizes
+$header-size: 60px;
+$sub-header-size: 40px;
+$sub-sub-header-size: 24px;
+$sub-paragraph-size: 18px;
+$button-text-size: 16px;
+$paragraph-size: 14px;
+
+// breakpoints
+$breakpoint-xs: 0;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;

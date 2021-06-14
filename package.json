@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o assets/css"
   },
   "author": "Narmina Aghayeva",
   "license": "ISC",
@@ -11,6 +12,7 @@
   "dependencies": {
     "bootstrap": "^5.0.1",
     "jqeury": "0.0.1-security",
+    "node-sass": "^6.0.0",
     "popper.js": "^1.16.1"
   }
 }
