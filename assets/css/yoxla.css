@@ -1,0 +1,25 @@
+@font-face {
+  font-family: GothamRegular;
+  src: url("../fonts/gotham/Gotham-Book.otf");
+}
+
+@font-face {
+  font-family: GothamBold;
+  src: url("../fonts/gotham/Gotham-Bold.otf");
+}
+
+body {
+  background: #5f2b2b;
+  font-family: gothamRegular;
+  color: #ffffff;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: white;
+}
+
+/* .nav-link:hover,
+.nav-link:focus {
+  color: #95b0d8;
+} */

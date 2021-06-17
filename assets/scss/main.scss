@@ -1,4 +1,5 @@
 @import "variables";
+@import "./../../node_modules/bootstrap/scss/bootstrap.scss";
 
 body {
   background: $bg-color;
@@ -6,12 +7,138 @@ body {
   color: $white-color;
 }
 
-.nav-link {
+.nav-item .nav-link {
   font-size: 1rem;
-  color: white;
+  color: $white-color;
 }
 
-.container{
+.nav-link:hover,
+.nav-link:focus {
+  color: $yellow-color;
 }
 
+.middle-container {
+  margin-top: 55px;
+  box-sizing: border-box;
+}
+// .paragraph {
+//   box-sizing: border-box;
+//   // padding-left: 100px;
+// }
 
+// .paragraph
+
+.paragraph {
+  box-sizing: border-box;
+
+  p {
+    margin: 20px 0 40px;
+    font-size: $paragraph-size;
+    border-left: 3px solid $blue-color;
+  }
+  button {
+    font-size: $button-text-size;
+    background-color: $bg-color;
+    color: $white-color;
+    border: 3px solid $yellow-color;
+    padding: 8px;
+  }
+}
+
+h1 {
+  font-size: $header-size;
+  color: $yellow-color;
+}
+// .paragraph p {
+//   margin: 20px 0 40px;
+//   font-size: $paragraph-size;
+//   border-left: 3px solid $blue-color;
+// }
+
+#fuad {
+  width: 80%;
+}
+
+// .paragraph button {
+//   font-size: $button-text-size;
+//   background-color: $bg-color;
+//   color: $white-color;
+//   border: 3px solid $yellow-color;
+//   padding: 8px;
+// }
+
+#work-pro {
+  width: 100%;
+}
+
+.forpr {
+  padding: 0;
+  height: 580px;
+  background-image: url("../images/text-bg.png");
+  background-size: cover;
+}
+
+.about {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+#caspian {
+  text-align: center;
+}
+#pattern {
+  width: 100%;
+}
+
+.buttons {
+  button {
+    background-color: $bg-color;
+    border: 3px solid $blue-color;
+    border-radius: 5px;
+    color: $white-color;
+    width: 240px;
+    display: flex;
+  }
+  // .buttons button p {
+  //   margin-left: 15px;
+  //   text-align: left;
+  // }
+  p {
+    margin-left: 15px;
+    text-align: left;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+#logo {
+  width: 120px;
+}
+
+.pr {
+  margin: 80px auto;
+  background-image: url("../images/text-bg.png");
+  background-size: cover;
+}
+.pr .modelpr {
+  text-align: center;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  // width: 205px;
+  height: 50px;
+}
+
+.last {
+  justify-content: space-between;
+}
+.last h1 {
+  font-size: $sub-header-size;
+  padding: 0;
+}
