@@ -1,11 +1,16 @@
 @font-face {
-  font-family: GothamRegular;
+  font-family: "GothamRegular";
   src: url("../fonts/gotham/Gotham-Book.otf");
 }
 
 @font-face {
-  font-family: GothamBold;
+  font-family: "GothamBold";
   src: url("../fonts/gotham/Gotham-Bold.otf");
+}
+
+@font-face {
+  font-family: "GothamMedium";
+  src: url("../fonts/gotham/Gotham-Medium.otf");
 }
 
 // colors

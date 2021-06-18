@@ -1,10 +1,14 @@
 @font-face {
-  font-family: GothamRegular;
+  font-family: "GothamRegular";
   src: url("../fonts/gotham/Gotham-Book.otf"); }
 
 @font-face {
-  font-family: GothamBold;
+  font-family: "GothamBold";
   src: url("../fonts/gotham/Gotham-Bold.otf"); }
+
+@font-face {
+  font-family: "GothamMedium";
+  src: url("../fonts/gotham/Gotham-Medium.otf"); }
 
 /*!
  * Bootstrap v5.0.1 (https://getbootstrap.com/)
@@ -7505,6 +7509,11 @@ body {
   margin-top: 55px;
   box-sizing: border-box; }
 
+.head {
+  font-size: 60px;
+  color: #ffc82d;
+  font-family: GothamMedium; }
+
 .paragraph {
   box-sizing: border-box; }
   .paragraph p {
@@ -7518,26 +7527,26 @@ body {
     border: 3px solid #ffc82d;
     padding: 8px; }
 
-h1, .h1 {
-  font-size: 60px;
-  color: #ffc82d; }
+.banner-text {
+  border-left: 3px solid #566cb3;
+  padding-left: 1rem; }
 
 #fuad {
-  width: 80%; }
+  width: 100%; }
 
 #work-pro {
   width: 100%; }
-
-.forpr {
-  padding: 0;
-  height: 580px;
-  background-image: url("../images/text-bg.png");
-  background-size: cover; }
 
 .about {
   margin: auto;
   justify-content: center;
   align-items: center; }
+
+.paragraph-bg {
+  background-image: url("../images/text-bg.png");
+  background-size: cover;
+  padding: 100px;
+  height: 300px; }
 
 #pattern {
   width: 100%; }

@@ -1,6 +1,8 @@
 @import "variables";
 @import "./../../node_modules/bootstrap/scss/bootstrap.scss";
 
+
+
 body {
   background: $bg-color;
   font-family: gothamRegular;
@@ -21,12 +23,12 @@ body {
   margin-top: 55px;
   box-sizing: border-box;
 }
-// .paragraph {
-//   box-sizing: border-box;
-//   // padding-left: 100px;
-// }
 
-// .paragraph
+.head {
+  font-size: $header-size;
+  color: $yellow-color;
+  font-family: GothamMedium;
+}
 
 .paragraph {
   box-sizing: border-box;
@@ -45,18 +47,13 @@ body {
   }
 }
 
-h1 {
-  font-size: $header-size;
-  color: $yellow-color;
+.banner-text {
+  border-left: 3px solid $blue-color;
+  padding-left: 1rem;
 }
-// .paragraph p {
-//   margin: 20px 0 40px;
-//   font-size: $paragraph-size;
-//   border-left: 3px solid $blue-color;
-// }
 
 #fuad {
-  width: 80%;
+  width: 100%;
 }
 
 // .paragraph button {
@@ -71,22 +68,19 @@ h1 {
   width: 100%;
 }
 
-.forpr {
-  padding: 0;
-  height: 580px;
-  background-image: url("../images/text-bg.png");
-  background-size: cover;
-}
-
 .about {
   margin: auto;
   justify-content: center;
   align-items: center;
 }
 
-#caspian {
-  // text-align: left;
+.paragraph-bg {
+  background-image: url("../images/text-bg.png");
+  background-size: cover;
+  padding: 100px;
+  height: 300px;
 }
+
 #pattern {
   width: 100%;
 }
@@ -100,10 +94,7 @@ h1 {
     width: 240px;
     display: flex;
   }
-  // .buttons button p {
-  //   margin-left: 15px;
-  //   text-align: left;
-  // }
+
   p {
     margin-left: 15px;
     text-align: left;
