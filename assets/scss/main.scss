@@ -1,8 +1,6 @@
 @import "variables";
 @import "./../../node_modules/bootstrap/scss/bootstrap.scss";
 
-
-
 body {
   background: $bg-color;
   font-family: gothamRegular;
@@ -142,16 +140,23 @@ input {
   margin: auto;
   text-align: center;
   width: 100%;
-  height: 100px;
+  height: 120px;
   background-color: $blue-color;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .carouseldiv {
   span {
+    width: 70%;
+    display: inline-flex;
+    text-align: center;
     background-color: $yellow-color;
     border-radius: 11.5px;
-    margin: 5px;
     padding: 8px;
     color: $bg-color;
   }
+}
+
+.client {
 }

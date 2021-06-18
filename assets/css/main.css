@@ -7598,12 +7598,16 @@ input {
   margin: auto;
   text-align: center;
   width: 100%;
-  height: 100px;
-  background-color: #566cb3; }
+  height: 120px;
+  background-color: #566cb3;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px; }
 
 .carouseldiv span {
+  width: 70%;
+  display: inline-flex;
+  text-align: center;
   background-color: #ffc82d;
   border-radius: 11.5px;
-  margin: 5px;
   padding: 8px;
   color: #242424; }
