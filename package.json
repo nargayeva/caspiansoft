@@ -12,7 +12,7 @@
   "description": "",
   "dependencies": {
     "bootstrap": "^5.0.1",
-    "jqeury": "0.0.1-security",
+    "jquery": "^3.6.0",
     "node-sass": "^6.0.0",
     "popper.js": "^1.16.1"
   },
