@@ -7605,9 +7605,19 @@ input {
 
 .carouseldiv span {
   width: 70%;
-  display: inline-flex;
   text-align: center;
   background-color: #ffc82d;
   border-radius: 11.5px;
   padding: 8px;
   color: #242424; }
+
+.bgimg {
+  position: relative;
+  right: 70px;
+  width: 600px;
+  z-index: -1; }
+
+#caspian {
+  position: absolute;
+  z-index: 99;
+  width: 500px; }
