@@ -7539,9 +7539,6 @@ h1, .h1 {
   justify-content: center;
   align-items: center; }
 
-#caspian {
-  text-align: center; }
-
 #pattern {
   width: 100%; }
 
@@ -7584,3 +7581,20 @@ input {
 .last h1, .last .h1 {
   font-size: 40px;
   padding: 0; }
+
+.carouselimg {
+  width: 100%; }
+
+.carouseldiv {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background-color: #566cb3; }
+
+.carouseldiv span {
+  background-color: #ffc82d;
+  border-radius: 11.5px;
+  margin: 5px;
+  padding: 8px;
+  color: #242424; }

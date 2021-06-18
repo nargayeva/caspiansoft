@@ -85,7 +85,7 @@ h1 {
 }
 
 #caspian {
-  text-align: center;
+  // text-align: left;
 }
 #pattern {
   width: 100%;
@@ -141,4 +141,26 @@ input {
 .last h1 {
   font-size: $sub-header-size;
   padding: 0;
+}
+
+.carouselimg {
+  width: 100%;
+}
+
+.carouseldiv {
+  margin: auto;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+  background-color: $blue-color;
+}
+
+.carouseldiv {
+  span {
+    background-color: $yellow-color;
+    border-radius: 11.5px;
+    margin: 5px;
+    padding: 8px;
+    color: $bg-color;
+  }
 }
