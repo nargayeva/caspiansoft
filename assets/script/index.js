@@ -32,3 +32,5 @@ var typed = new Typed("#typed", {
 function changeColor() {
   buttonF.style.backgroundColor = "$blue-color";
 }
+
+
