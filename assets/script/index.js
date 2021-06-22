@@ -19,7 +19,7 @@ buttonS.onclick = function () {
 buttonT.onclick = function () {
   content.innerHTML =
     "Today, business world, to a large extent, run with operative software programs. In Caspian Soft, we are specialized in implementing a wide range of software solutions to help our clients to maximize their productivity, efficiency, and profitability. These sophisticated programs do not just provide convenience but also assure the professionalism and competitiveness in a modern business environment.";
-  changeColor();
+  // changeColor();
 };
 
 var typed = new Typed("#typed", {
@@ -29,8 +29,6 @@ var typed = new Typed("#typed", {
   loop: true,
 });
 
-function changeColor() {
-  buttonF.style.backgroundColor = "$blue-color";
-}
-
-
+// function changeColor() {
+//   buttonF.style.backgroundColor = "$blue-color";
+// }

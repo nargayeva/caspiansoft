@@ -7546,7 +7546,7 @@ body {
   background-image: url("../images/text-bg.png");
   background-size: cover;
   padding: 100px;
-  height: 300px; }
+  height: auto; }
 
 #pattern {
   width: 100%; }
@@ -7587,10 +7587,6 @@ input {
 .last {
   justify-content: space-between; }
 
-.last h1, .last .h1 {
-  font-size: 40px;
-  padding: 0; }
-
 .carouselimg {
   width: 100%; }
 
@@ -7610,6 +7606,32 @@ input {
   border-radius: 11.5px;
   padding: 8px;
   color: #242424; }
+
+.carousel-control-next {
+  margin-left: 300px; }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+  background-image: none; }
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 35px;
+  color: #ffc82d; }
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: #ffc82d; }
+
+.carousel-img {
+  background-color: #ffffff;
+  border-radius: 50%;
+  width: 100%; }
 
 .bgimg {
   position: relative;

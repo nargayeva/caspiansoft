@@ -127,10 +127,10 @@ input {
 .last {
   justify-content: space-between;
 }
-.last h1 {
-  font-size: $sub-header-size;
-  padding: 0;
-}
+// .last h1 {
+//   font-size: $sub-header-size;
+//   padding: 0;
+// }
 
 .carouselimg {
   width: 100%;
@@ -157,9 +157,37 @@ input {
   }
 }
 
-.client {
+.carousel-control-next {
+  margin-left: 300px;
 }
 
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  background-size: 100%, 100%;
+
+  background-image: none;
+}
+
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 35px;
+  color: $yellow-color;
+}
+
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 55px;
+  color: $yellow-color;
+}
+
+.carousel-img {
+  background-color: $white-color;
+  border-radius: 50%;
+  width: 100%;
+}
 .bgimg {
   position: relative;
   right: 70px;
@@ -171,4 +199,5 @@ input {
   position: absolute;
   z-index: 99;
   width: 500px;
+  // right: 10px;
 }
