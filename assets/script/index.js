@@ -1,7 +1,7 @@
 "use strict";
-var buttonF = document.querySelector(".model-1"); //first button
-var buttonS = document.querySelector(".model-2"); //second button
-var buttonT = document.querySelector(".model-3"); //third button
+var buttonF = document.querySelector(".web-dev-btn"); //first button
+var buttonS = document.querySelector(".mob-dev-btn"); //second button
+var buttonT = document.querySelector(".software-consulting-btn"); //third button
 
 var content = document.querySelector(".modelpr");
 

@@ -84,13 +84,13 @@ body {
 }
 
 .buttons {
-  button {
+  .services {
     background-color: $bg-color;
     border: 3px solid $blue-color;
     border-radius: 5px;
     color: $white-color;
-    width: 240px;
-    display: flex;
+    width: 100%;
+    //display: flex;
   }
 
   p {
