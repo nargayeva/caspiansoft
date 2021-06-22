@@ -78,9 +78,6 @@ body {
 }
 
 // ABOUT
-.about {
-  // height: 600px;
-}
 
 .about-text {
   @include paragraph();
@@ -88,12 +85,12 @@ body {
 
 .paragraph-bg {
   @include bg-section();
-  height: 500px;
+  height: 100vh;
 }
 
-// #pattern {
-//   width: 100%;
-// }
+#pattern {
+  width: 100%;
+}
 
 // SERVICES
 .buttons {

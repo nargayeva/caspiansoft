@@ -7548,7 +7548,10 @@ body {
   background-image: url("../images/bg.png");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 500px; }
+  height: 100vh; }
+
+#pattern {
+  width: 100%; }
 
 .buttons .services {
   background-color: #242424;
