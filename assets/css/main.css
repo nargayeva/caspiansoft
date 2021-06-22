@@ -7644,3 +7644,9 @@ footer {
 
 .last {
   justify-content: space-between; }
+
+.navbar-light {
+  color: #ffffff; }
+
+.navbar-light .navbar-nav .nav-link {
+  color: #ffffff; }

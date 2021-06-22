@@ -35,7 +35,6 @@ body {
 }
 
 .nav-item .nav-link {
-  
   color: $white-color;
 }
 
@@ -85,7 +84,6 @@ body {
 
 .about-text {
   @include paragraph();
-  
 }
 
 .paragraph-bg {
@@ -96,7 +94,6 @@ body {
 // #pattern {
 //   width: 100%;
 // }
-
 
 // SERVICES
 .buttons {
@@ -213,4 +210,12 @@ footer {
 
 .last {
   justify-content: space-between;
+}
+
+.navbar-light {
+  color: $white-color;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $white-color;
 }
