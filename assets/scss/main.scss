@@ -1,88 +1,104 @@
+// GENERAL
 @import "variables";
 @import "./../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@mixin paragraph {
+  font-size: $paragraph-size;
+  text-align: left;
+  line-height: 2;
+}
+
+@mixin bg-section {
+  background-image: url("../images/bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+@mixin button {
+  font-size: $button-text-size;
+  background-color: $bg-color;
+  color: $white-color;
+  border: 3px solid $yellow-color;
+  padding: 8px;
+}
 
 body {
   background: $bg-color;
   font-family: gothamRegular;
   color: $white-color;
+  box-sizing: border-box;
+}
+
+// NAV MENU
+#logo {
+  width: 120px;
 }
 
 .nav-item .nav-link {
-  font-size: 1rem;
+  
   color: $white-color;
+}
+
+.nav-item {
+  margin-left: 2rem;
 }
 
 .nav-link:hover,
 .nav-link:focus {
+  font-size: $button-text-size;
   color: $yellow-color;
 }
 
-.middle-container {
-  margin-top: 55px;
-  box-sizing: border-box;
-}
-
+// BANNER
 .head {
   font-size: $header-size;
   color: $yellow-color;
   font-family: GothamMedium;
 }
 
-.paragraph {
-  box-sizing: border-box;
-
-  p {
-    margin: 20px 0 40px;
-    font-size: $paragraph-size;
-    border-left: 3px solid $blue-color;
-  }
-  button {
-    font-size: $button-text-size;
-    background-color: $bg-color;
-    color: $white-color;
-    border: 3px solid $yellow-color;
-    padding: 8px;
-  }
-}
-
 .banner-text {
   border-left: 3px solid $blue-color;
   padding-left: 1rem;
+  font-size: $sub-paragraph-size;
 }
 
-#fuad {
+#banner-img {
   width: 100%;
 }
 
-// .paragraph button {
-//   font-size: $button-text-size;
-//   background-color: $bg-color;
-//   color: $white-color;
-//   border: 3px solid $yellow-color;
-//   padding: 8px;
-// }
+.banner-text-section {
+  p {
+    @include paragraph();
+    margin: 20px 0 40px;
+    border-left: 3px solid $blue-color;
+  }
 
-#work-pro {
-  width: 100%;
+  button {
+    @include button();
+  }
 }
 
+// ABOUT
 .about {
-  margin: auto;
-  justify-content: center;
-  align-items: center;
+  // height: 600px;
+}
+
+.about-text {
+  @include paragraph();
+  
 }
 
 .paragraph-bg {
-  background-image: url("../images/text-bg.png");
-  background-size: cover;
-  padding: 100px;
-  height: auto;
+  @include bg-section();
+  height: 500px;
 }
 
-#pattern {
-  width: 100%;
-}
+// #pattern {
+//   width: 100%;
+// }
 
+
+// SERVICES
 .buttons {
   .services {
     background-color: $bg-color;
@@ -90,50 +106,27 @@ body {
     border-radius: 10px;
     color: $white-color;
     width: 100%;
+    font-size: $paragraph-size;
     //display: flex;
   }
 
   p {
+    @include paragraph();
     margin-left: 15px;
-    text-align: left;
   }
 }
 
-footer {
-  display: flex;
-  justify-content: space-between;
-}
-#logo {
-  width: 120px;
-}
-
 .paragh {
-  background-image: url("../images/text-bg.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  font-size: $paragraph-size;
+  @include bg-section();
+  @include paragraph();
 }
 .paragh .modelparagh {
-  text-align: left;
-  width: 80%;
-  line-height: 2;
+  // width: 60%;
 }
 
-input {
-  background-color: transparent;
-  border: 1px solid #e5e5e5;
-  border-radius: 4px;
-  // width: 205px;
-  height: 50px;
+#work-pro {
+  width: 100%;
 }
-
-.last {
-  justify-content: space-between;
-}
-// .last h1 {
-//   font-size: $sub-header-size;
-//   padding: 0;
-// }
 
 .carouselimg {
   width: 100%;
@@ -203,4 +196,21 @@ input {
   z-index: 99;
   width: 500px;
   // right: 10px;
+}
+
+input {
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+  // width: 205px;
+  height: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.last {
+  justify-content: space-between;
 }

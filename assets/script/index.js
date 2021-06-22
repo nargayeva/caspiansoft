@@ -3,7 +3,7 @@ var buttonF = document.querySelector(".web-dev-btn"); //first button
 var buttonS = document.querySelector(".mob-dev-btn"); //second button
 var buttonT = document.querySelector(".software-consulting-btn"); //third button
 
-var content = document.querySelector(".modelpr");
+var content = document.querySelector(".modelparagh");
 
 buttonF.onclick = function () {
   content.innerHTML =
