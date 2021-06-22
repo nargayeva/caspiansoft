@@ -87,7 +87,7 @@ body {
   .services {
     background-color: $bg-color;
     border: 3px solid $blue-color;
-    border-radius: 5px;
+    border-radius: 10px;
     color: $white-color;
     width: 100%;
     //display: flex;
@@ -107,13 +107,16 @@ footer {
   width: 120px;
 }
 
-.pr {
-  margin: 80px auto;
+.paragh {
   background-image: url("../images/text-bg.png");
-  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-size: $paragraph-size;
 }
-.pr .modelpr {
-  text-align: center;
+.paragh .modelparagh {
+  text-align: left;
+  width: 80%;
+  line-height: 2;
 }
 
 input {
