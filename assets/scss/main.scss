@@ -29,9 +29,100 @@ body {
   box-sizing: border-box;
 }
 
+.nav-logo {
+  width: 20%;
+}
+
+//curtain menu
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $blue-color;
+  overflow-x: hidden;
+  // transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay-content .btn-outline-warning {
+  width: 50%;
+}
+
+.curtain-links a {
+  border-bottom: 1px solid $white-color;
+}
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: $sub-sub-header-size;
+  color: $white-color;
+  display: block;
+  // transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+//end of curtain menu
+
+//dropdown button
+.dropdown-toggle {
+  border: none;
+  background-color: $bg-color;
+}
+
+.dropdown-menu {
+  background-color: $bg-color;
+  border: none;
+}
+
+.dropdown-toggle:hover {
+  background-color: $bg-color;
+}
+.dropdown-item {
+  color: $white-color;
+}
+
+.nav-div {
+  margin: auto;
+  // height: 100vh;
+  // background-color: $blue-color;
+}
+
 // NAV MENU
 #logo {
-  width: 120px;
+  width: 20%;
 }
 
 .nav-item .nav-link {
@@ -163,7 +254,7 @@ body {
 
 .carousel-control-next-icon:after {
   content: ">";
-  font-size: 35px;
+  font-size: 55px;
   color: $yellow-color;
 }
 
@@ -171,6 +262,10 @@ body {
   content: "<";
   font-size: 55px;
   color: $yellow-color;
+}
+
+.client {
+  width: 150px;
 }
 
 .carousel-img {
@@ -215,4 +310,8 @@ footer {
 
 .navbar-light .navbar-nav .nav-link {
   color: $white-color;
+}
+
+.icon {
+  width: 20px;
 }

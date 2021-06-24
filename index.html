@@ -14,24 +14,57 @@
 
 <body>
 
+    <section class="container">
+        <div id="myNav" class="overlay  ">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content container">
+                <img src="./assets/images/caspiansoft.png" alt="" class="nav-logo">
+                <p class="mt-4"> <b>Caspian Soft</b> is a specialized software engineering company providing a wide
+                    range of services in the field of information
+                    technology and software development since 2015. </p>
+                <div class="mt-5 curtain-links">
+                    <a href="#about" class="pb-4">about us</a>
+                    <a href="#services" class="pb-4">services</a>
+                    <a href="#projects" class="pb-4">projects</a>
+                    <a href="#" class="pb-4">techBlogs</a>
+                </div>
 
-<div></div>
+
+
+                <div class="d-flex justify-content-center">
+                    <a class="btn btn-outline-warning  fw-bold mt-5" id="button" href="#" type="button">get in
+                        touch</a>
+                </div>
 
 
 
 
+
+                <div class="mt-5"> <span>hello@caspiansoft.com</span>
+                </div>
+                <div class="col-md-4  d-flex justify-content-around order-md-2 order-1 mt-3">
+                    <img src="./assets/images/instagram.svg" alt="" />
+                    <img src="./assets/images/github .svg" alt="" />
+                    <img src="./assets/images/facebook .svg" alt="" />
+                    <img src="./assets/images/linkedin .svg" alt="" />
+                    <img src="./assets/images/behance .svg" alt="" />
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
 
     <section class="container mt-4">
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid p-0">
+                <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="d-md-none d-flex">&#9776; </span>
+
                 <a class="navbar-brand" href="#">
-                    <img src="./assets/images/logo.png" height="30" alt="" class = "d-none d-md-flex" />
+                    <img src="./assets/images/logo.png" height="30" alt="" class="" />
                 </a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
                 <div class="nav-link-section">
                     <ul class="navbar-nav justify-content-end collapse navbar-collapse " id="navbarNav">
@@ -51,34 +84,47 @@
                             <a class="btn btn-outline-warning fw-bold" id="button" href="#" type="button">get in
                                 touch</a>
                         </li>
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                az
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">eng</a>
-                                <a class="dropdown-item" href="#">rus</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li> -->
-
                     </ul>
+                </div>
 
+                <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+ -->
+
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        az
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">eng</a></li>
+                        <li><a class="dropdown-item" href="#">rus </a></li>
+                        <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
                 </div>
 
 
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                az
-            </a>
+                <!-- 
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    az
+                </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" href="#">eng</a>
                     <a class="dropdown-item" href="#">rus</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Something else here</a>
-                </div>
+                </div> -->
             </div>
         </nav>
     </section>
@@ -176,13 +222,62 @@
 
     </section>
 
-    <section class="container mt-5">
+    </div>
+    <section class="container-fluid mt-5">
         <div id="projects" class="projects mt-5">
             <h2>recent projects</h2>
             <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
                 data-bs-interval="false">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-1 d-flex justify-content-center">
+
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                        </div>
+
+                        <div class="col-10">
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-6 car-div justify-content-center">
+                                        <img class="carouselimg" src="./assets/images/taxo.png" alt="" />
+                                        <div class="carouseldiv justify-content-center p-3">
+                                            <h3>TAXO</h3>
+                                            <span>mobile development</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-sm-6 car-div justify-content-center">
+                                        <img class="carouselimg" src="./assets/images/cherpeleng.png" alt="" />
+                                        <div class="carouseldiv justify-content-center p-3">
+                                            <h3>CHARPALANG</h3>
+                                            <span>mobile development</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 col-sm-6 car-div car-div justify-content-center">
+                                        <img class="carouselimg" src="./assets/images/drezza.png" alt="" />
+                                        <div class="carouseldiv justify-content-center p-3">
+                                            <h3>DREZZA</h3>
+                                            <span>web development</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1 d-flex justify-content-center">
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- //second -->
+                    <div class="carousel-item ">
                         <div class="row">
                             <div class="col-md-4 col-sm-6 car-div justify-content-center">
                                 <img class="carouselimg" src="./assets/images/taxo.png" alt="" />
@@ -208,45 +303,52 @@
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+
+                    <div class="carousel-item ">
                         <div class="row">
-                            <div class="col-md-4 col-6 car-div d-flex justify-content-center">
-                                <img src="./assets/images/icon.png" alt="" />
+                            <div class="col-md-4 col-sm-6 car-div justify-content-center">
+                                <img class="carouselimg" src="./assets/images/taxo.png" alt="" />
+                                <div class="carouseldiv justify-content-center p-3">
+                                    <h3>TAXO</h3>
+                                    <span>mobile development</span>
+                                </div>
                             </div>
-                            <div class="col-md-4 col-6 car-div d-flex justify-content-center">
-                                <img src="./assets/images/icon.png" alt="" />
+                            <div class="col-md-4 col-sm-6 car-div justify-content-center">
+                                <img class="carouselimg" src="./assets/images/cherpeleng.png" alt="" />
+                                <div class="carouseldiv justify-content-center p-3">
+                                    <h3>CHARPALANG</h3>
+                                    <span>mobile development</span>
+                                </div>
                             </div>
-                            <div class="col-md-4 col-6 d-none d-md-flex car-div justify-content-center">
-                                <img src="./assets/images/icon.png" alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="row">
-                            <div class="col-md-4 car-div d-flex justify-content-center">
-                                <img src="./assets/images/icon.png" alt="" />
-                            </div>
-                            <div class="col-md-4 car-div d-flex justify-content-center">
-                                <img src="./assets/images/icon.png" alt="" />
-                            </div>
-                            <div class="col-md-4 car-div d-none d-md-flex car-div justify-content-center">
-                                <img src="./assets/images/icon.png" alt="" />
+
+                            <div class="col-md-4 col-sm-6 car-div car-div justify-content-center">
+                                <img class="carouselimg" src="./assets/images/drezza.png" alt="" />
+                                <div class="carouseldiv justify-content-center p-3">
+                                    <h3>DREZZA</h3>
+                                    <span>web development</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- 
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
+                </button> -->
+
+                <!-- <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching"
                     data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
-                </button>
+                </button> -->
             </div>
-            <button class="mt-3">view all</button>
+            <div class=" d-flex justify-content-center justify-content-md-end ">
+                <a class="btn btn-outline-warning fw-bold mt-3 d-flex  " id="button" href="#" type="button">view all
+                </a>
+            </div>
+
         </div>
     </section>
 
@@ -260,10 +362,11 @@
                 data-bs-interval="false">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="row">
+                        <div class="row d-flex justify-content-between">
                             <div class=" col-md-3 car-div d-flex justify-content-center client">
                                 <img class="carousel-img" src="./assets/images/sas.png" alt="" />
                             </div>
+
                             <div class=" col-md-3 car-div d-flex justify-content-center client">
                                 <img class="carousel-img" src="./assets/images/psc.png" alt="" />
                             </div>
@@ -321,7 +424,7 @@
             </div>
 
             <div class="row mt-5">
-                <div class="col-md-8 forpr d-flex justify-content-center align-items-center">
+                <!-- <div class="col-md-8 forpr d-flex justify-content-center align-items-center">
                     <p id="caspian">
                         Caspian Soft is a specialized software engineering company
                         providing a wide range of services in the field of information
@@ -333,9 +436,22 @@
                     </p>
                     <img class="bgimg" src="./assets/images/text-bg.png" alt="">
 
-                </div>
-                <div class="col-md-4">
-                    <!-- <img id="pattern" src="assets/images/logos-pattern.png" alt="" /> -->
+                </div> -->
+                <div class="row mt-5 d-flex">
+                    <div class="col-8 paragraph-bg p-5 justify-content-center align-items-center">
+                        <div>
+                            Caspian Soft is a specialized software engineering company providing a wide
+                            range of services in the field of information
+                            technology and software development since 2015. At Caspian Soft,
+                            we put our customers at the heart of everything we do and strive
+                            for excellence. In doing so, we use the most innovative
+                            technologies and methodologies to deliver agile, competitive and
+                            high standard solutions.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <img id="pattern" src="assets/images/logos-pattern.png" alt="" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -344,36 +460,61 @@
 
     <section class="container mt-5">
         <div class="row last mt-5">
-            <div class="col-lg-4 d-flex justify-content-center">
-                <h1 class="head">have a project in mind ?</h1>
+            <div class="col-md-4 d-flex justify-content-center">
+                <h1 class="head text-center text-md-start">have a project in mind ?</h1>
             </div>
-            <div class="col-lg-4 d-flex justify-content-center">
+
+            <div class="col-md-4 d-flex justify-content-center">
                 <form action="">
                     <input type="text" placeholder="email" class="m-2 p-3" />
                     <br />
                     <input type="text" placeholder="project title" class="m-2 p-3" />
                     <br />
-                    <a class="btn btn-outline-warning fw-bold m-2" id="button" href="" type="button">continue</a>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn btn-outline-warning fw-bold m-2  " id="button" href="" type="button">continue</a>
+                    </div>
+
                 </form>
             </div>
 
-            <div class="col-md-4 d-flex justify-content-center">
-                <div class="">
-                    <p>hello@caspiansoft.com</p>
-                    <p>+994 50 420 47 47</p>
-                    <p>Office Center, Ahmad Rajabli, Baku 1075</p>
+            <div class="col-md-4 justify-content-center justify-content-md-start">
+                <div class="row text-center">
+                    <div>
+                        <img src="./assets/images/mail-icon.svg" class="icon" alt="">
+                        <span>hello@caspiansoft.com</span>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div>
+                        <img src="./assets/images/call-icon.svg" alt="">
+                        <span>+994 50 420 47 47</span>
+                    </div>
+                </div>
+
+                <div class="row mt-3">
+                    <div>
+                        <img src="./assets/images/location-icon.svg" alt="">
+                        <span>Office Center, Ahmad Rajabli, Baku 1075</span>
+                    </div>
                 </div>
             </div>
         </div>
 
-        <footer class="container mt-5 d-flex">
-            <img src="./assets/images/logo.png" alt="" id="logo" />
-            <p>2021 caspiansoft | all rights reserved</p>
-            <img src="./assets/images/instagram.svg" alt="" />
-            <img src="./assets/images/github .svg" alt="" />
-            <img src="./assets/images/facebook .svg" alt="" />
-            <img src="./assets/images/linkedin .svg" alt="" />
-            <img src="./assets/images/behance .svg" alt="" />
+        <footer class="container mt-5 row ">
+            <img src="./assets/images/logo.png" alt="" id="logo"
+                class="col-md-4 d-none d-md-flex justify-content-center " />
+            <div class="col-md-4  d-flex justify-content-around order-md-2 order-1">
+                <img src="./assets/images/instagram.svg" alt="" />
+                <img src="./assets/images/github .svg" alt="" />
+                <img src="./assets/images/facebook .svg" alt="" />
+                <img src="./assets/images/linkedin .svg" alt="" />
+                <img src="./assets/images/behance .svg" alt="" />
+            </div>
+            <p class="col-md-4   d-flex justify-content-center order-2 order-md-1 ">2021 caspiansoft | all rights
+                reserved.</p>
+
+
         </footer>
     </section>
     <script>
