@@ -7499,6 +7499,9 @@ body {
   color: #ffffff;
   box-sizing: border-box; }
 
+.chosen {
+  background-color: #566cb3; }
+
 .nav-logo {
   width: 20%; }
 
@@ -7616,7 +7619,10 @@ body {
   background-image: url("../images/bg.png");
   background-size: contain;
   background-repeat: no-repeat;
-  height: 100vh; }
+  font-size: 14px;
+  text-align: left;
+  line-height: 2;
+  height: 70vh; }
 
 #pattern {
   width: 100%; }
@@ -7636,12 +7642,16 @@ body {
   margin-left: 15px; }
 
 .paragh {
+  height: 65vh;
   background-image: url("../images/bg.png");
   background-size: contain;
   background-repeat: no-repeat;
   font-size: 14px;
   text-align: left;
   line-height: 2; }
+
+.paragh .modelparagh {
+  width: 90%; }
 
 #work-pro {
   width: 100%; }

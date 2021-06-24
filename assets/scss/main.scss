@@ -29,6 +29,9 @@ body {
   box-sizing: border-box;
 }
 
+.chosen {
+  background-color: $blue-color;}
+
 .nav-logo {
   width: 20%;
 }
@@ -176,7 +179,9 @@ body {
 
 .paragraph-bg {
   @include bg-section();
-  height: 100vh;
+  @include paragraph();
+  // padding: 20rem 40rem;
+  height: 70vh;
 }
 
 #pattern {
@@ -202,11 +207,13 @@ body {
 }
 
 .paragh {
+  height: 65vh;
   @include bg-section();
   @include paragraph();
 }
+
 .paragh .modelparagh {
-  // width: 60%;
+  width: 90%;
 }
 
 #work-pro {
