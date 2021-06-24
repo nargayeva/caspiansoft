@@ -33,3 +33,13 @@ var typed = new Typed("#typed", {
 // function changeColor() {
 //   buttonF.style.backgroundColor = "$blue-color";
 // }
+
+//for curtain menu
+
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
