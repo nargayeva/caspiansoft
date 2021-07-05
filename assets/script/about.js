@@ -1,5 +1,15 @@
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+
+//CAROUSEL
+
 $("#myCarousel").carousel({
-  interval: 1000,
+  interval: 2000,
 });
 
 $(".carousel .carousel-item").each(function () {

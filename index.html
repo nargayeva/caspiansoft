@@ -27,10 +27,10 @@
                     range of services in the field of information
                     technology and software development since 2015. </p>
                 <div class="mt-5 curtain-links">
-                    <a href="#about" class="pb-4">about us</a>
-                    <a href="#services" class="pb-4">services</a>
-                    <a href="#projects" class="pb-4">projects</a>
-                    <a href="#" class="pb-4">techBlogs</a>
+                    <a href="#about" class="pb-4" onclick="closeNav()">about us</a>
+                    <a href="#services" class="pb-4" onclick="closeNav()">services</a>
+                    <a href="#projects" class="pb-4" onclick="closeNav()">projects</a>
+                    <a href="#" class="pb-4" onclick="closeNav()">techBlogs</a>
                 </div>
 
 
@@ -61,7 +61,7 @@
     </section>
 
     <section class="container mt-4">
-        <nav class="navbar navbar-expand-md navbar-light">
+        <nav class="navbar navbar-expand-md navbar-light  pl-0">
             <div class="container-fluid p-0">
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="d-md-none d-flex">&#9776; </span>
 
@@ -71,9 +71,9 @@
 
 
                 <div class="nav-link-section">
-                    <ul class="navbar-nav justify-content-end collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav  collapse navbar-collapse " id="navbarNav">
                         <li class="nav-item">
-                            <a class="nav-link mr-5" href="#about">about us</a>
+                            <a class="nav-link " href="#about">about us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#services">services</a>
@@ -91,19 +91,7 @@
                     </ul>
                 </div>
 
-                <!-- <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
-                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
- -->
+
 
                 <div class="dropdown">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
@@ -113,58 +101,50 @@
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                         <li><a class="dropdown-item" href="#">eng</a></li>
                         <li><a class="dropdown-item" href="#">rus </a></li>
-                        <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
                     </ul>
                 </div>
 
 
-                <!-- 
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    az
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="#">eng</a>
-                    <a class="dropdown-item" href="#">rus</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div> -->
             </div>
         </nav>
     </section>
 
-    <!-- orta hisse -->
 
     <section class="container mt-5">
         <div class="row">
             <div class="banner-text-section col-md-5 align-self-center">
-                <span class="head">
-                    make it {
-                    <div id="typed-strings">{
-                        <span>online;</span>
-                        <span>digital;</span>
-                        <span>unique;</span>
-                        <!-- <span>innovative;</span> -->
-                    </div>
-                    <span id="typed"></span>
-                    }
-                </span>
+                <div class="w-auto"> <span class="head">
+                        make it {
+                        <div id="typed-strings">{
+                            <span>online;</span>
+                            <span>digital;</span>
+                            <span>unique;</span>
+                            <!-- <span>innovative;</span> -->
+                        </div>
+                        <span id="typed"></span>
+                        }
+                    </span></div>
+
 
                 <div class="pl-2 mt-3 mb-5 banner-text col-10">
                     bespoke solutions both in software engineering and digital design
                 </div>
                 <a class="btn btn-outline-warning fw-bold" id="button" href="#" type="button">get in touch</a>
             </div>
-
-            <div class="images col-md-7">
+            <div class="images col-md-7 d-none d-md-inline-block">
                 <img id="banner-img" src="assets/images/banner.png" alt="" />
             </div>
         </div>
     </section>
 
-    <section class="container  about">
+
+    <!-- *** ABOUT US  *** -->
+
+
+
+    <section class="container  about" id="about">
         <div class="smth">
-            <h2>about us</h2>
+            <h2 class=" text-center text-md-start">about us</h2>
             <div class="about_content">
                 <div class="bck_about">
                     <div>
@@ -182,31 +162,35 @@
         </div>
     </section>
 
-    <section class="container mt-5">
-        <div id="services" class="row mt-5 d-flex flex-md-row flex-column">
-            <h2>services</h2>
+
+
+    <!-- *** SERVICES *** -->
+    <section class="container mt-5" id="services">
+        <div class="row mt-5 d-flex flex-md-row flex-column">
+            <h2 class=" text-center text-md-start">services</h2>
 
             <div class="service__container">
                 <div class="service_features">
 
-                    <div class="services web-dev-btn mb-4 px-4 py-4 mb-4 d-flex justify-content-around">
+                    <div class="services web-dev-btn mr-2  mb-5   p-4 d-flex justify-content-around web-dev-btn">
                         <img src="assets/images/web-dev-icon.svg" alt="" />
-                        <div class="col-5">Web Development</div>
+                        <div class="col-7">Web Development</div>
                     </div>
 
-                    <div class="services mob-dev-btn mt-4 mb-4 px-4 py-4 d-flex justify-content-around">
+                    <div class="services mob-dev-btn mr-2  mb-5   p-4 d-flex justify-content-around mob-dev-btn">
                         <img src="assets/images/mobile-dev-icon.svg" alt="" />
-                        <div class="col-5">Mobile Development</div>
+                        <div class="col-7">Mobile Development</div>
                     </div>
 
-                    <div class="services software-consulting-btn mt-4 px-4 py-4 d-flex justify-content-around">
+                    <div
+                        class="services software-consulting-btn mr-2 p-4 d-flex justify-content-around software-consulting-btn">
                         <img src="assets/images/soft-consulting-icon.svg" alt="" />
-                        <div class="col-5">Software Consulting</div>
+                        <div class="col-7">Software Consulting</div>
                     </div>
                 </div>
 
                 <div class=" szd_md ">
-                    <div class="modelparagh">
+                    <div class="modelparagh p-4 ">
                         Ever since the Internet has been introduced, web services skyrocketed. With a growing demand for
                         e-commerce facilities, Caspian Soft offers a wide range of reliable solutions for organizations.
                         Our main competencies in web development lie in designing modern corporate websites; building
@@ -231,29 +215,29 @@
 
 
 
-
-    <section class=" mt-5 container">
-        <h2>recent projects</h2>
+    <!-- ***  PROJECTS  *** -->
+    <section class=" mt-5 " id="projects">
+        <h2 class="container text-center text-md-start">recent projects</h2>
         <div class=" text-center mt-5">
 
-            <div class="row mx-auto my-auto">
+            <div class="row ">
                 <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
-                    <div class="carousel-inner w-100" role="listbox">
+                    <div class="carousel-inner pr-5  container p-2" role="listbox">
                         <div class="carousel-item active">
                             <div class="col-lg-4 col-md-6">
                                 <img class="carouselimg" src="./assets/images/taxo.png" alt="" />
                                 <div class="carouseldiv justify-content-center p-3">
                                     <h3>TAXO</h3>
-                                    <span>mobile development</span>
+                                    <span class="carouselspan">mobile development</span>
                                 </div>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item ">
                             <div class="col-lg-4 col-md-6">
                                 <img class="carouselimg" src="./assets/images/cherpeleng.png" alt="" />
                                 <div class="carouseldiv justify-content-center p-3">
                                     <h3>CHARPALANG</h3>
-                                    <span>mobile development</span>
+                                    <span class="carouselspan">mobile development</span>
                                 </div>
                             </div>
                         </div>
@@ -262,7 +246,7 @@
                                 <img class="carouselimg" src="./assets/images/drezza.png" alt="" />
                                 <div class="carouseldiv justify-content-center p-3">
                                     <h3>DREZZA</h3>
-                                    <span>web development</span>
+                                    <span class="carouselspan">web development</span>
                                 </div>
                             </div>
                         </div>
@@ -272,7 +256,7 @@
                                 <img class="carouselimg" src="./assets/images/taxo.png" alt="" />
                                 <div class="carouseldiv justify-content-center p-3">
                                     <h3>TAXO</h3>
-                                    <span>mobile development</span>
+                                    <span class="carouselspan">mobile development</span>
 
                                 </div>
                             </div>
@@ -282,7 +266,7 @@
                                 <img class="carouselimg" src="./assets/images/cherpeleng.png" alt="" />
                                 <div class="carouseldiv justify-content-center p-3">
                                     <h3>CHARPALANG</h3>
-                                    <span>mobile development</span>
+                                    <span class="carouselspan">mobile development</span>
                                 </div>
                             </div>
                         </div>
@@ -291,16 +275,16 @@
                                 <img class="carouselimg" src="./assets/images/taxo.png" alt="" />
                                 <div class="carouseldiv justify-content-center p-3">
                                     <h3>TAXO</h3>
-                                    <span>mobile development</span>
+                                    <span class="carouselspan">mobile development</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev  w-auto" href="#myCarousel" role="button" data-slide="prev">
+                    <a class="carousel-control-prev  pr-5 " href="#myCarousel" role="button" data-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="carousel-control-next  w-auto" href="#myCarousel" role="button" data-slide="next">
+                    <a class="carousel-control-next  pl-5" href="#myCarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
@@ -308,17 +292,109 @@
             </div>
 
 
+            <div class="d-flex justify-content-md-end justify-content-center  container">
+                <a class="btn btn-outline-warning  fw-bold mt-5" id="button" href="#" type="button">view all </a>
+            </div>
 
+
+    </section>
+
+    <!-- ***  CLIENTS  *** -->
+
+
+
+
+
+    <section class=" mt-5 " id="projects">
+        <h2 class="container text-center text-md-start">recent projects</h2>
+        <div class=" text-center mt-5">
+
+            <div class="row ">
+                <div id="myCarousel" class="carousel slide w-100" data-ride="carousel">
+                    <div class="carousel-inner w-100  container p-2" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-lg-4 col-md-6">
+                                <img class="carouselimg" src="./assets/images/taxo.png" alt="" />
+                                <div class="carouseldiv justify-content-center p-3">
+                                    <h3>TAXO</h3>
+                                    <span class="carouselspan">mobile development</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-4 col-md-6">
+                                <img class="carouselimg" src="./assets/images/cherpeleng.png" alt="" />
+                                <div class="carouseldiv justify-content-center p-3">
+                                    <h3>CHARPALANG</h3>
+                                    <span class="carouselspan">mobile development</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-4 col-md-6">
+                                <img class="carouselimg" src="./assets/images/drezza.png" alt="" />
+                                <div class="carouseldiv justify-content-center p-3">
+                                    <h3>DREZZA</h3>
+                                    <span class="carouselspan">web development</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-4 col-md-6">
+
+                                <img class="carouselimg" src="./assets/images/taxo.png" alt="" />
+                                <div class="carouseldiv justify-content-center p-3">
+                                    <h3>TAXO</h3>
+                                    <span class="carouselspan">mobile development</span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-4 col-md-6">
+                                <img class="carouselimg" src="./assets/images/cherpeleng.png" alt="" />
+                                <div class="carouseldiv justify-content-center p-3">
+                                    <h3>CHARPALANG</h3>
+                                    <span class="carouselspan">mobile development</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-lg-4 col-md-6">
+                                <img class="carouselimg" src="./assets/images/taxo.png" alt="" />
+                                <div class="carouseldiv justify-content-center p-3">
+                                    <h3>TAXO</h3>
+                                    <span class="carouselspan">mobile development</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <a class="carousel-control-prev  mr-5 " href="#myCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next  ml-5" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+
+            <div class="d-flex justify-content-md-end justify-content-center  container">
+                <a class="btn btn-outline-warning  fw-bold mt-5" id="button" href="#" type="button">view all </a>
+            </div>
 
 
     </section>
 
 
-    <!-- clients -->
 
-    <!-- <section class="container mt-5">
+    <!-- 
+    <section class="container mt-5">
         <div id="clients" class="clients mt-5">
-            <h2>happy clients</h2>
+            <h2 class=" text-center text-md-start">happy clients</h2>
             <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false"
                 data-bs-interval="false">
                 <div class="carousel-inner">
@@ -353,30 +429,30 @@
                 </button>
             </div>
 
-         
-                <div class="row mt-5 d-flex">
-                    <div class="col-8 paragraph-bg p-5 justify-content-center align-items-center">
-                        <div>
-                            Caspian Soft is a specialized software engineering company providing a wide
-                            range of services in the field of information
-                            technology and software development since 2015. At Caspian Soft,
-                            we put our customers at the heart of everything we do and strive
-                            for excellence. In doing so, we use the most innovative
-                            technologies and methodologies to deliver agile, competitive and
-                            high standard solutions.
-                        </div>
+
+            <div class="row mt-5 d-flex">
+                <div class="col-8 paragraph-bg p-5 justify-content-center align-items-center">
+                    <div>
+                        Caspian Soft is a specialized software engineering company providing a wide
+                        range of services in the field of information
+                        technology and software development since 2015. At Caspian Soft,
+                        we put our customers at the heart of everything we do and strive
+                        for excellence. In doing so, we use the most innovative
+                        technologies and methodologies to deliver agile, competitive and
+                        high standard solutions.
                     </div>
-                    <div class="col-md-4">
-                        <img id="pattern" src="assets/images/logos-pattern.png" alt="" />
-                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img id="pattern" src="assets/images/logos-pattern.png" alt="" />
                 </div>
             </div>
         </div>
         </div>
+        </div>
     </section> -->
 
-    <section class="container mt-5">
-        <div class="row last mt-5">
+    <section class="container mt-5 ">
+        <div class="row last mt-5 ">
             <div class="col-md-4 d-flex justify-content-center">
                 <h1 class="head text-center text-md-start">have a project in mind ?</h1>
             </div>
@@ -397,43 +473,54 @@
             <div class="col-md-4 justify-content-center justify-content-md-start">
                 <div class="row text-center text-md-start">
                     <div>
-                        <img src="./assets/images/mail-icon.svg" class="icon" alt="">
+                        <img src="./assets/images/mail-icon.svg" class="d-none d-md-inline-block " alt="">
                         <span>hello@caspiansoft.com</span>
                     </div>
                 </div>
 
                 <div class="row mt-3 text-center text-md-start">
                     <div>
-                        <img src="./assets/images/call-icon.svg" alt="">
+                        <img src="./assets/images/call-icon.svg" class="d-none d-md-inline-block" alt="">
                         <span>+994 50 420 47 47</span>
                     </div>
                 </div>
 
                 <div class="row mt-3 text-center text-md-start">
                     <div>
-                        <img src="./assets/images/location-icon.svg" alt="">
+                        <img src="./assets/images/location-icon.svg" class="d-none d-md-inline-block" alt="">
                         <span>Office Center, Ahmad Rajabli, Baku 1075</span>
                     </div>
                 </div>
             </div>
         </div>
 
+
+
+
         <footer class="container mt-5 row ">
-            <img src="./assets/images/logo.png" alt="" id="logo"
-                class="col-md-4 d-none d-md-flex justify-content-center " />
-            <div class="col-md-4  d-flex justify-content-around order-md-2 order-1">
-                <img src="./assets/images/instagram.svg" alt="" />
-                <img src="./assets/images/github .svg" alt="" />
-                <img src="./assets/images/facebook .svg" alt="" />
-                <img src="./assets/images/linkedin .svg" alt="" />
-                <img src="./assets/images/behance .svg" alt="" />
+            <div class="pl-0 d-none col-md-4 d-md-flex"> <img src="./assets/images/logo.png" alt="" id="logo"
+                    class="w-50" />
             </div>
-            <p class="col-md-4   d-flex justify-content-center order-2 order-md-1 ">2021 caspiansoft | all rights
-                reserved.</p>
+
+            <!-- <img src="./assets/images/logo.png" alt="" id="logo"
+                    class="col-md-4 d-none d-md-flex justify-content-center pl-0" /> -->
+
+
+            <div class="col-md-4  d-flex  justify-content-around order-md-2 order-1">
+                <img src="./assets/images/instagram.svg" alt="" class="icon" />
+                <img src="./assets/images/github .svg" alt="" class="icon" />
+                <img src="./assets/images/facebook .svg" alt="" class="icon" />
+                <img src="./assets/images/linkedin .svg" alt="" class="icon" />
+                <img src="./assets/images/behance .svg" alt="" class="icon" />
+            </div>
+            <span class="col-md-4   d-flex justify-content-center align-items-center order-2 order-md-1 ">2021
+                caspiansoft | all rights
+                reserved.</span>
 
 
         </footer>
     </section>
+
     </script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -459,12 +546,7 @@
             console.log(error);
         }
 
-        // var typed = new Typed("#typed", {
-        //     stringsElement: "#typed-strings",
-        //     typeSpeed: 100,
-        //     backDelay: 700,
-        //     loop: true,
-        // });
+
 
 
 

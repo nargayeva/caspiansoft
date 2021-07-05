@@ -7560,14 +7560,27 @@ body {
   border: none;
   background-color: #242424; }
 
+.dropdown {
+  border: none; }
+
+.dropdown:hover {
+  background-color: #242424;
+  border: none; }
+
 .dropdown-menu {
   background-color: #242424;
   border: none; }
 
 .dropdown-toggle:hover {
-  background-color: #242424; }
+  background-color: #242424;
+  border: none; }
 
 .dropdown-item {
+  color: #ffffff;
+  background-color: #242424; }
+
+.dropdown-item:hover {
+  background-color: #242424;
   color: #ffffff; }
 
 .nav-div {
@@ -7585,6 +7598,9 @@ body {
 .nav-link:hover, .nav-link:focus {
   font-size: 16px;
   color: #ffc82d; }
+
+.collapse {
+  justify-content: flex-start; }
 
 .head {
   font-size: 50px;
@@ -7626,7 +7642,6 @@ body {
     justify-content: space-between; }
 
 .bck_about {
-  width: 60%;
   padding: 2rem;
   max-width: 600px;
   background-image: url("../images/bg.png");
@@ -7660,7 +7675,6 @@ body {
   justify-content: space-between; }
   #services .service__container .service_features {
     min-width: 200px;
-    margin: 1rem;
     width: 30%; }
   #services .service__container .szd_md {
     width: 60%;
@@ -7672,12 +7686,10 @@ body {
     margin: 1rem; }
 
 .services {
-  padding: 5px !important;
   background-color: #242424;
   border: 3px solid #566cb3;
   border-radius: 10px;
   color: #ffffff;
-  min-width: 100%;
   font-size: 14px; }
 
 p {
@@ -7726,9 +7738,6 @@ p {
   line-height: 2;
   width: 60%; }
 
-.paragh .modelparagh {
-  width: 90%; }
-
 #work-pro {
   width: 100%; }
 
@@ -7744,13 +7753,19 @@ p {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px; }
 
-.carouseldiv span {
+.carouseldiv .carouselspan {
   width: 70%;
   text-align: center;
   background-color: #ffc82d;
   border-radius: 11.5px;
   padding: 8px;
   color: #242424; }
+
+.carousel-control-next-icon::before {
+  color: #ffc82d; }
+
+.carousel-control-next-icon {
+  opacity: unset; }
 
 .client {
   width: 150px; }
@@ -7791,7 +7806,7 @@ footer {
   color: #ffffff; }
 
 .icon {
-  width: 20px; }
+  width: 2vw; }
 
 /* Carousel base class */
 /* Since positioning the image, we need to help out the caption */
@@ -7800,7 +7815,7 @@ footer {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 100%;
   background-color: #242424; }
 
 .carousel-item > img {
@@ -7808,37 +7823,14 @@ footer {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 32rem; }
+  height: 100%; }
 
 /* MARKETING CONTENT
 -------------------------------------------------- */
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center; }
-
-.marketing h2, .marketing .h2 {
-  font-weight: 400; }
-
-.marketing .col-lg-4 p {
-  margin-right: 0.75rem;
-  margin-left: 0.75rem; }
-
 /* Featurettes
 ------------------------- */
-.featurette-divider {
-  margin: 5rem 0;
-  /* Space out the Bootstrap <hr> more */ }
-
 /* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: -0.05rem; }
-
-.carousel-control-next-icon {
-  color: #ffc82d; }
-
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 @media (min-width: 40em) {
@@ -7885,3 +7877,6 @@ footer {
 .carousel-inner .carousel-item-right,
 .carousel-inner .carousel-item-left {
   transform: translateX(0); }
+
+.tick {
+  width: 7vw; }
