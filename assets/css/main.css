@@ -7497,6 +7497,8 @@ body {
   background: #242424;
   font-family: gothamRegular;
   color: #ffffff;
+  overflow: scroll x;
+  overflow-x: hidden;
   box-sizing: border-box; }
 
 .chosen {
@@ -7504,6 +7506,10 @@ body {
 
 .nav-logo {
   width: 20%; }
+
+.btn-outline-warning {
+  color: #ffffff;
+  width: max-content; }
 
 #pattern {
   width: 100%; }
@@ -7627,7 +7633,8 @@ body {
   background-color: #242424;
   color: #ffffff;
   border: 3px solid #ffc82d;
-  padding: 8px; }
+  padding: 8px;
+  box-sizing: border-box; }
 
 .about {
   height: max-content; }
@@ -7655,9 +7662,17 @@ body {
 .about_content > img {
   width: 30%; }
 
+@media (max-width: 990) {
+  .btn-outline-warning {
+    width: max-content; }
+  .test {
+    text-align: center; } }
+
 @media (max-width: 900px) {
   .about_content > img {
     display: none; }
+  .btn-outline-warning {
+    width: max-content; }
   .bck_about {
     width: 100%; } }
 
@@ -7880,3 +7895,13 @@ footer {
 
 .tick {
   width: 7vw; }
+
+.ALL {
+  justify-content: space-around; }
+
+.all {
+  border-radius: 0.625rem;
+  text-align: center;
+  width: 15rem;
+  display: flex;
+  justify-content: center; }

@@ -21,14 +21,22 @@
   color: $white-color;
   border: 3px solid $yellow-color;
   padding: 8px;
+  box-sizing: border-box;
 }
+
+
 
 body {
   background: $bg-color;
   font-family: gothamRegular;
   color: $white-color;
+  // background-size: cover;
+  overflow: scroll x;
+  overflow-x: hidden;
+
   box-sizing: border-box;
 }
+
 
 .chosen {
   background-color: $blue-color;
@@ -36,6 +44,10 @@ body {
 
 .nav-logo {
   width: 20%;
+}
+.btn-outline-warning{
+  color: $white-color;
+  width: max-content;
 }
 #pattern {
   width: 100%;
@@ -53,6 +65,7 @@ body {
   overflow-x: hidden;
   // transition: 0.5s;
 }
+
 
 .overlay-content {
   position: relative;
@@ -232,11 +245,24 @@ body {
 .about_content > img {
   width: 30%;
 }
+@media (max-width:990) {
+  .btn-outline-warning{
+    width: max-content;
+  }
+  .test{
+    text-align: center;
+  }
+}
 
 @media (max-width: 900px) {
   .about_content > img {
     display: none;
   }
+  .btn-outline-warning{
+    width: max-content;
+  }
+ 
+
   .bck_about {
     width: 100%;
   }
@@ -295,6 +321,8 @@ p {
 @media (max-width: 900px) {
   .service__container {
     flex-direction: column;
+    
+    
 
     .service_features {
       display: flex;
@@ -611,3 +639,18 @@ footer {
   // width: 50px;
   width: 7vw;
 }
+
+// *** PROJECTS HTML *** 
+
+.ALL{
+  justify-content: space-around;
+}
+
+.all{
+  border-radius: 0.625rem;
+  text-align: center;
+  width: 15rem;
+  display: flex;
+  justify-content: center;
+}
+

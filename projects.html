@@ -32,7 +32,7 @@
                     range of services in the field of information
                     technology and software development since 2015. </p>
                 <div class="mt-5 curtain-links">
-                    <a href="#about" class="pb-4" onclick="closeNav()">about us</a>
+                    <a href="#about" class="pb-4 test"  onclick="closeNav()">about us</a>
                     <a href="#services" class="pb-4" onclick="closeNav()">services</a>
                     <a href="#projects" class="pb-4" onclick="closeNav()">projects</a>
                     <a href="#" class="pb-4" onclick="closeNav()">techBlogs</a>
@@ -70,7 +70,7 @@
             <div class="container-fluid p-0">
                 <span style="font-size:30px;cursor:pointer" onclick="openNav()" class="d-md-none d-flex">&#9776; </span>
 
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand d-flex justify-content-end" href="#">
                     <img src="./assets/images/logo.png" height="30" alt="" class="" />
                 </a>
 
@@ -120,39 +120,27 @@
 
     <section class="container  projects" id="project">
         <div class="projects">
-            <h2 class="text-center text-md-start">projects</h2>
-
-
-            <div class="d-flex">
-                <button>all</button>
-                <!-- <button>web development</button>
-                <button>mobile development</button>
-                <button>software consulting </button> -->
-                <div class="services web-dev-btn   d-flex web-dev-btn w-25">
-                    <div class="col-2">Web Development</div>
-                </div>
-                <div class="services mob-dev-btn   d-flex  w-25">
-                    <div class="col-2">Mobile Development</div>
-                </div>
-
-                <div class="services software-consulting-btn d-flex w-25">
-                    <div class="col-2">Software Consulting</div>
-                </div>
-
-
+            
+            <h2 class="text-center text-md-start mt-4">projects</h2>
+               
+            <div class="d-flex  ALL row mt-4" >
+                <div class="services col-3 all all-dev-btn  web-dev-btn p-2 ">all</div>
+                <div class="services all web-dev-btn col-3  web-dev-btn p-2 ">web development</div>
+                <div class="services all mob-dev-btn col-3  p-2">mobile development</div>
+                <div class="services all col-3 software-consulting-btn  p-2  ">software consulting</div>
             </div>
 
 
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 mb-4 mt-4 col-md-6">
                         <img class="carouselimg" src="./assets/images/drezza.png" alt="" />
                         <div class="carouseldiv justify-content-center p-3">
                             <h3>DREZZA</h3>
                             <span class="carouselspan">web development</span>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 mb-4 mt-4 col-md-6">
 
                         <img class="carouselimg" src="./assets/images/taxo.png" alt="" />
                         <div class="carouseldiv justify-content-center p-3">
@@ -161,21 +149,21 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 mb-4 mt-4 col-md-6">
                         <img class="carouselimg" src="./assets/images/cherpeleng.png" alt="" />
                         <div class="carouseldiv justify-content-center p-3">
                             <h3>CHARPALANG</h3>
                             <span class="carouselspan">mobile development</span>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 mb-4 mt-4 col-md-6">
                         <img class="carouselimg" src="./assets/images/drezza.png" alt="" />
                         <div class="carouseldiv justify-content-center p-3">
                             <h3>DREZZA</h3>
                             <span class="carouselspan">web development</span>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 mb-4 mt-4 col-md-6">
 
                         <img class="carouselimg" src="./assets/images/taxo.png" alt="" />
                         <div class="carouseldiv justify-content-center p-3">
@@ -184,21 +172,21 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 mb-4 mt-4 col-md-6">
                         <img class="carouselimg" src="./assets/images/cherpeleng.png" alt="" />
                         <div class="carouseldiv justify-content-center p-3">
                             <h3>CHARPALANG</h3>
                             <span class="carouselspan">mobile development</span>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 mb-4 mt-4 col-md-6">
                         <img class="carouselimg" src="./assets/images/drezza.png" alt="" />
                         <div class="carouseldiv justify-content-center p-3">
                             <h3>DREZZA</h3>
                             <span class="carouselspan">web development</span>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 mb-4 mt-4 col-md-6">
 
                         <img class="carouselimg" src="./assets/images/taxo.png" alt="" />
                         <div class="carouseldiv justify-content-center p-3">
@@ -207,7 +195,7 @@
 
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-4 mb-4 mt-4 col-md-6">
                         <img class="carouselimg" src="./assets/images/cherpeleng.png" alt="" />
                         <div class="carouseldiv justify-content-center p-3">
                             <h3>CHARPALANG</h3>
@@ -232,7 +220,7 @@
 
 
     <!-- *** IDEA FORM  only for mobile size *** -->
-    <section class="ideaform container d-lex d-md-none">
+    <section class="ideaform container d-flex d-md-none">
         <h1 class="text-center head">why customer idea form ?</h1>
         <div>
             <div class="d-flex m-3 ">
