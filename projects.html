@@ -32,7 +32,7 @@
                     range of services in the field of information
                     technology and software development since 2015. </p>
                 <div class="mt-5 curtain-links">
-                    <a href="#about" class="pb-4 test"  onclick="closeNav()">about us</a>
+                    <a href="#about" class="pb-4 test" onclick="closeNav()">about us</a>
                     <a href="#services" class="pb-4" onclick="closeNav()">services</a>
                     <a href="#projects" class="pb-4" onclick="closeNav()">projects</a>
                     <a href="#" class="pb-4" onclick="closeNav()">techBlogs</a>
@@ -76,9 +76,9 @@
 
 
                 <div class="nav-link-section">
-                    <ul class="navbar-nav justify-content-end collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav collapse navbar-collapse d-flex justify-content-end  " id="navbarNav">
                         <li class="nav-item">
-                            <a class="nav-link " href="#about">about us</a>
+                            <a class="nav-link" href="#about">about us</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#services">services</a>
@@ -107,6 +107,7 @@
                         <li><a class="dropdown-item" href="#">eng</a></li>
                         <li><a class="dropdown-item" href="#">rus </a></li>
                     </ul>
+               
                 </div>
 
 
@@ -120,16 +121,21 @@
 
     <section class="container  projects" id="project">
         <div class="projects">
-            
-            <h2 class="text-center text-md-start mt-4">projects</h2>
-               
-            <div class="d-flex  ALL row mt-4" >
-                <div class="services col-3 all all-dev-btn  web-dev-btn p-2 ">all</div>
-                <div class="services all web-dev-btn col-3  web-dev-btn p-2 ">web development</div>
-                <div class="services all mob-dev-btn col-3  p-2">mobile development</div>
-                <div class="services all col-3 software-consulting-btn  p-2  ">software consulting</div>
+            <div class="container"> 
+                <h2 class="text-center text-md-start mt-4">projects</h2>
+            </div>
+           
+            <div>
+                <div class="d-flex  ALL row mt-4">
+                    <div class="services col-3 all all-dev-btn  web-dev-btn p-2" style="width:20% ;">all</div>
+                    <div class="services all web-dev-btn  web-dev-btn p-2 " style="width:20% ;">web development</div>
+                    <div class="services all mob-dev-btn  p-2" style="width:20% ;">mobile development</div>
+                    <div class="services all col-3 software-consulting-btn  p-2  " style="width:20% ;">software consulting</div>
+                </div>
             </div>
 
+
+            
 
             <div class="container">
                 <div class="row">
@@ -156,6 +162,9 @@
                             <span class="carouselspan">mobile development</span>
                         </div>
                     </div>
+                    <!-- <button onclick="topFunction()" id="myBtn" title="Go to top" >
+                        <img class="top" src="./assets/images/Group-58.png" alt="">
+                    </button>  -->
                     <div class="col-lg-4 mb-4 mt-4 col-md-6">
                         <img class="carouselimg" src="./assets/images/drezza.png" alt="" />
                         <div class="carouseldiv justify-content-center p-3">
@@ -305,6 +314,7 @@
                 </div>
             </div>
         </div>
+       
 
         <footer class="container mt-5 row ">
             <img src="./assets/images/logo.png" alt="" id="logo"

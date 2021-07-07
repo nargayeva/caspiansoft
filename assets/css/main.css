@@ -7563,11 +7563,11 @@ body {
     right: 35px; } }
 
 .dropdown-toggle {
-  border: none;
-  background-color: #242424; }
+  border: none !important;
+  background-color: #242424 !important; }
 
 .dropdown {
-  border: none; }
+  border: none !important; }
 
 .dropdown:hover {
   background-color: #242424;
@@ -7578,8 +7578,8 @@ body {
   border: none; }
 
 .dropdown-toggle:hover {
-  background-color: #242424;
-  border: none; }
+  background-color: #242424 !important;
+  border: none !important; }
 
 .dropdown-item {
   color: #ffffff;
@@ -7598,12 +7598,15 @@ body {
 .nav-item .nav-link {
   color: #ffffff; }
 
+.nav-link {
+  width: max-content; }
+
 .nav-item {
   margin-left: 2rem; }
 
 .nav-link:hover, .nav-link:focus {
   font-size: 16px;
-  color: #ffc82d; }
+  color: #ffc82d !important; }
 
 .collapse {
   justify-content: flex-start; }
@@ -7619,7 +7622,7 @@ body {
   font-size: 18px; }
 
 #banner-img {
-  width: 100%; }
+  width: 35rem; }
 
 .banner-text-section p {
   font-size: 14px;
@@ -7648,12 +7651,14 @@ body {
     min-height: 500px;
     justify-content: space-between; }
 
-.bck_about {
-  padding: 2rem;
-  max-width: 600px;
-  background-image: url("../images/bg.png");
+.ZpFd {
+  margin-left: -100px; }
+
+.ABOUTUS {
+  background-image: url("../images/Group-45.png");
+  background-size: contain;
+  height: 90vh;
   background-position: center;
-  background-size: 100% 100%;
   background-repeat: no-repeat; }
 
 .bck_about > div {
@@ -7662,9 +7667,16 @@ body {
 .about_content > img {
   width: 30%; }
 
-@media (max-width: 990) {
+@media (max-width: 990px) {
   .btn-outline-warning {
     width: max-content; }
+  .ABOUTUS {
+    background-image: url("../images/Group-118.png");
+    font-size: x-small;
+    height: 31.25rem;
+    margin: 1rem 0 1rem 0; }
+  .ALL {
+    justify-content: space-between; }
   .test {
     text-align: center; } }
 
@@ -7896,6 +7908,9 @@ footer {
 .tick {
   width: 7vw; }
 
+.navbar-brand-about {
+  margin-left: -20px; }
+
 .ALL {
   justify-content: space-around; }
 
@@ -7905,3 +7920,13 @@ footer {
   width: 15rem;
   display: flex;
   justify-content: center; }
+
+#myBtn {
+  background-color: #242424;
+  justify-content: right;
+  right: 30px;
+  border: none; }
+
+.top {
+  width: 50px;
+  height: 50px; }

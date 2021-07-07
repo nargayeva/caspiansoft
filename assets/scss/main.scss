@@ -118,16 +118,16 @@ body {
 
 //dropdown button
 .dropdown-toggle {
-  border: none;
-  background-color: $bg-color;
+  border: none !important;
+  background-color: $bg-color !important;
 }
 
 .dropdown {
-  border: none;
+  border: none !important;
 }
 .dropdown:hover {
-  background-color: $bg-color;
-  border: none;
+  background-color: $bg-color ;
+  border: none ;
 }
 .dropdown-menu {
   background-color: $bg-color;
@@ -135,8 +135,8 @@ body {
 }
 
 .dropdown-toggle:hover {
-  background-color: $bg-color;
-  border: none;
+  background-color: $bg-color !important;
+  border: none !important;
 }
 .dropdown-item {
   color: $white-color;
@@ -161,6 +161,9 @@ body {
 .nav-item .nav-link {
   color: $white-color;
 }
+.nav-link{
+  width: max-content;
+}
 
 .nav-item {
   margin-left: 2rem;
@@ -169,7 +172,7 @@ body {
 .nav-link:hover,
 .nav-link:focus {
   font-size: $button-text-size;
-  color: $yellow-color;
+  color: $yellow-color !important;
 }
 
 .collapse {
@@ -196,7 +199,7 @@ body {
 }
 
 #banner-img {
-  width: 100%;
+  width: 35rem;
 }
 
 .banner-text-section {
@@ -228,15 +231,18 @@ body {
     justify-content: space-between;
   }
 }
+.ZpFd{
+  margin-left: -100px;
+}
 
-.bck_about {
-  // width: 60%;
-  padding: 2rem;
-  max-width: 600px;
-  background-image: url("../images/bg.png");
+
+.ABOUTUS {
+  background-image: url("../images/Group-45.png");
+  background-size: contain;
+  height: 90vh;
   background-position: center;
-  background-size: 100% 100%;
   background-repeat: no-repeat;
+  
 }
 
 .bck_about > div {
@@ -245,15 +251,28 @@ body {
 .about_content > img {
   width: 30%;
 }
-@media (max-width:990) {
+
+
+@media (max-width:990px) {
   .btn-outline-warning{
     width: max-content;
   }
+  .ABOUTUS{
+    background-image: url('../images/Group-118.png');
+    font-size: x-small;
+    height: 31.25rem;
+    margin: 1rem 0 1rem 0;
+  }
+  .ALL{
+    justify-content: space-between;
+  }
+  // .all{
+  //   width: 20%;
+  // }
   .test{
     text-align: center;
   }
 }
-
 @media (max-width: 900px) {
   .about_content > img {
     display: none;
@@ -639,6 +658,9 @@ footer {
   // width: 50px;
   width: 7vw;
 }
+.navbar-brand-about{
+  margin-left: -20px;
+}
 
 // *** PROJECTS HTML *** 
 
@@ -652,5 +674,15 @@ footer {
   width: 15rem;
   display: flex;
   justify-content: center;
+}
+#myBtn{
+  background-color: $bg-color;
+  justify-content: right;
+  right: 30px;
+  border: none;
+}
+.top{
+  width: 50px;
+  height: 50px;
 }
 
