@@ -46,7 +46,7 @@ function closeNav() {
 //CAROUSEL
 
 $("#myCarousel").carousel({
-  interval: 2000,
+  interval: false,
 });
 
 $(".carousel .carousel-item").each(function () {

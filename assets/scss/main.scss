@@ -28,6 +28,7 @@ body {
   font-family: gothamRegular;
   color: $white-color;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .chosen {
@@ -63,7 +64,7 @@ body {
 }
 
 .overlay-content .btn-outline-warning {
-  width: 50%;
+  // width: 50%;
 }
 
 .curtain-links a {
@@ -146,6 +147,10 @@ body {
 }
 
 .nav-item .nav-link {
+  // color: $white-color;
+}
+
+.btn-outline-warning {
   color: $white-color;
 }
 
@@ -153,28 +158,28 @@ body {
   margin-left: 2rem;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  font-size: $button-text-size;
-  color: $yellow-color;
+.nav-link {
+  color: $blue-color;
 }
+// .nav-link:hover,
+// .nav-link:focus {
+//   font-size: $button-text-size;
+//   color: $yellow-color ;
+// }
 
 .collapse {
   justify-content: flex-start;
 }
 
+.navbar-collapse {
+}
+
 // BANNER
 .head {
   font-size: $header-size;
-  // font-size: $sub-header-size;
-  // display: flex;
   color: $yellow-color;
   font-family: GothamMedium;
 }
-
-// .typed {
-//   display: flex;
-// }
 
 .banner-text {
   border-left: 3px solid $blue-color;
@@ -183,7 +188,7 @@ body {
 }
 
 #banner-img {
-  width: 100%;
+  // width: 30vw;
 }
 
 .banner-text-section {
@@ -233,7 +238,8 @@ body {
   width: 30%;
 }
 
-@media (max-width: 900px) {
+// @media (max-width: 900px) {
+@media (max-width: 992px) {
   .about_content > img {
     display: none;
   }
@@ -241,7 +247,8 @@ body {
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+// @media (max-width: 400px) {
+@media (max-width: 768px) {
   .bck_about {
     font-size: 0.9rem;
     padding: 0.7rem;
@@ -252,26 +259,26 @@ body {
 
 #services {
   h2 {
-    margin-bottom: 2rem;
+    // margin-bottom: 2rem;
   }
 
   .service__container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
 
     .service_features {
-      min-width: 200px;
-      width: 30%;
+      // min-width: 200px;
+      // width: 30%;
     }
     .szd_md {
-      width: 60%;
+      // width: 60%;
       padding: 4rem 2rem;
       background-image: url("../images/bg.png");
       background-size: 100% 100%;
       background-position: center;
       background-repeat: no-repeat;
-      margin: 1rem;
+      margin-left: 3vw;
     }
   }
 }
@@ -292,7 +299,8 @@ p {
   margin-left: 15px;
 }
 
-@media (max-width: 900px) {
+// @media (max-width: 900px) {
+@media (max-width: 992px) {
   .service__container {
     flex-direction: column;
 
@@ -320,11 +328,13 @@ p {
     }
     .szd_md {
       width: 100% !important;
+      margin-left: 0;
     }
   }
 }
 
-@media (max-width: 550px) {
+// @media (max-width: 550px) {
+@media (max-width: 768px) {
   .service_features {
     margin: 5px !important;
     .services {
@@ -344,13 +354,6 @@ p {
   width: 60%;
 }
 
-// .paragh .modelparagh {
-//   width: 90%;
-// }
-
-.modelparagh {
-}
-
 #work-pro {
   width: 100%;
 }
@@ -362,7 +365,7 @@ p {
 .carouseldiv {
   margin: auto;
   text-align: center;
-  width: 100%;
+  // width: 100%;
   height: 120px;
   background-color: $blue-color;
   border-bottom-left-radius: 10px;
@@ -450,9 +453,6 @@ footer {
   justify-content: space-between;
 }
 
-.navbar {
-}
-
 .navbar-light {
   color: $white-color;
 }
@@ -479,7 +479,6 @@ footer {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  // height: 32rem;
   height: 100%;
   background-color: $bg-color;
 }
@@ -489,53 +488,7 @@ footer {
   left: 0;
   min-width: 100%;
   height: 100%;
-
-  // height: 32rem;
 }
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-// .marketing .col-lg-4 {
-//   margin-bottom: 1.5rem;
-//   text-align: center;
-// }
-// .marketing h2 {
-//   font-weight: 400;
-// }
-// .marketing .col-lg-4 p {
-//   margin-right: 0.75rem;
-//   margin-left: 0.75rem;
-// }
-
-/* Featurettes
-------------------------- */
-
-// .featurette-divider {
-//   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-// }
-
-/* Thin out the marketing headings */
-// .featurette-heading {
-//   font-weight: 300;
-//   line-height: 1;
-//   letter-spacing: -0.05rem;
-// }
-
-.carousel-control-prev {
-}
-
-.carousel-control-next {
-}
-
-// .carousel-control-next-icon {
-//   color: $yellow-color;
-// }
-
-// .carousel-control-prev-icon {
-//   color: $yellow-color;
-// }
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -610,4 +563,34 @@ footer {
 .tick {
   // width: 50px;
   width: 7vw;
+}
+
+.about_backgr {
+}
+
+.team-members {
+  background-color: $blue-color;
+  border-radius: 10px;
+}
+
+.about_pattern {
+  position: relative;
+  left: 230px;
+}
+
+.team-members span {
+  // font-size: $paragraph-size;
+}
+
+.member-name {
+  font-size: $sub-paragraph-size;
+}
+
+.member-position {
+  font-size: $paragraph-size;
+}
+.nav-link:hover,
+.nav-link:focus {
+  font-size: $button-text-size;
+  color: $yellow-color;
 }
