@@ -240,6 +240,7 @@ body {
   background-image: url("../images/Group-45.png");
   background-size: contain;
   height: 90vh;
+  line-height: 1.8rem;
   background-position: center;
   background-repeat: no-repeat;
   
@@ -257,10 +258,18 @@ body {
   .btn-outline-warning{
     width: max-content;
   }
+
+  .small_logo{
+    
+  }
+  .smaller{
+    font-size: smaller ;
+  }
   .ABOUTUS{
-    background-image: url('../images/Group-118.png');
-    font-size: x-small;
-    height: 31.25rem;
+    background-image: url('../images/bg.png');
+    font-size: small;
+    height: 33rem;
+    line-height: 1.25rem;
     margin: 1rem 0 1rem 0;
   }
   .ALL{
@@ -290,6 +299,14 @@ body {
   .bck_about {
     font-size: 0.9rem;
     padding: 0.7rem;
+  }
+  // .ABOUTUS{
+  //   height: 36rem ;
+  // }
+  .ABOUTUS2 {
+    font-size: xx-small;
+    margin: 1rem;
+    line-height: 1rem;
   }
 }
 
@@ -368,6 +385,15 @@ p {
     .szd_md {
       width: 100% !important;
     }
+  }
+}
+
+@media(max-width:768px){
+  .ABOUTUS{
+    background-image: url('../images/Group-118.png');
+    font-size:small ;
+    height: 31.25rem;
+    margin: 1rem 0 1rem 0;
   }
 }
 
