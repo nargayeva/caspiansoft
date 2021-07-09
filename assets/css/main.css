@@ -7668,9 +7668,17 @@ body {
 .about_content > img {
   width: 30%; }
 
+@media (max-width: 1200px) {
+  .navbar-nav {
+    margin-left: 9rem !important; } }
+
 @media (max-width: 990px) {
   .btn-outline-warning {
     width: max-content; }
+  .navbar-nav {
+    margin-left: 5rem !important; }
+  #dropdownMenuButton1 {
+    margin-left: 1rem; }
   .smaller {
     font-size: smaller; }
   .ABOUTUS {
@@ -7696,6 +7704,8 @@ body {
   .bck_about {
     font-size: 0.9rem;
     padding: 0.7rem; }
+  .small_logo {
+    margin-left: 4rem !important; }
   .ABOUTUS2 {
     font-size: xx-small;
     margin: 1rem;
@@ -7759,7 +7769,9 @@ p {
     background-image: url("../images/Group-118.png");
     font-size: small;
     height: 31.25rem;
-    margin: 1rem 0 1rem 0; } }
+    margin: 1rem 0 1rem 0; }
+  .small_logo {
+    margin-left: 6.5rem !important; } }
 
 @media (max-width: 550px) {
   .service_features {
@@ -7840,6 +7852,9 @@ footer {
 
 .last {
   justify-content: space-between; }
+
+.navbar-nav {
+  margin-left: 19rem; }
 
 .navbar-light {
   color: #ffffff; }
