@@ -7653,12 +7653,23 @@ body {
   .about_content > img {
     display: none; }
   .bck_about {
-    width: 100%; } }
+    width: 100%; }
+  .ABOUTUS {
+    background-image: url("../images/bg.png");
+    font-size: small;
+    height: 33rem;
+    line-height: 1.25rem;
+    margin: 1rem 0 1rem 0; } }
 
 @media (max-width: 768px) {
   .bck_about {
     font-size: 0.9rem;
-    padding: 0.7rem; } }
+    padding: 0.7rem; }
+  .ABOUTUS {
+    background-image: url("../images/Group-118.png");
+    font-size: small;
+    height: 31.25rem;
+    margin: 1rem 0 1rem 0; } }
 
 #services .service__container .szd_md {
   padding: 4rem 2rem;
@@ -7876,12 +7887,13 @@ footer {
   font-size: 16px;
   color: #ffc82d; }
 
-.nazrin {
+.ABOUTUS {
   background-image: url("../images/about.png");
   background-size: contain;
   height: 90vh;
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  line-height: 1.8rem; }
 
 #myBtn {
   display: none;
@@ -7917,3 +7929,6 @@ footer {
 
 .change-color {
   background-color: #566cb3; }
+
+.project-buttons > div {
+  width: 20vw; }

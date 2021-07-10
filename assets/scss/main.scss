@@ -246,12 +246,30 @@ body {
   .bck_about {
     width: 100%;
   }
+
+  // in about.html file
+  .ABOUTUS {
+    background-image: url("../images/bg.png");
+    font-size: small;
+    height: 33rem;
+    line-height: 1.25rem;
+    margin: 1rem 0 1rem 0;
+  }
 }
 // @media (max-width: 400px) {
 @media (max-width: 768px) {
   .bck_about {
     font-size: 0.9rem;
     padding: 0.7rem;
+  }
+
+  //in about.html file
+
+  .ABOUTUS {
+    background-image: url("../images/Group-118.png");
+    font-size: small;
+    height: 31.25rem;
+    margin: 1rem 0 1rem 0;
   }
 }
 
@@ -596,13 +614,14 @@ footer {
   color: $yellow-color;
 }
 
-.nazrin {
+.ABOUTUS {
   background-image: url("../images/about.png");
   background-size: contain;
   height: 90vh;
   background-position: center;
   // background-size: 100% 100%;
   background-repeat: no-repeat;
+  line-height: 1.8rem;
 }
 
 // button to scroll up
@@ -629,4 +648,9 @@ footer {
 // change bc color
 .change-color {
   background-color: $blue-color;
+}
+
+//PROJECTS HTML
+.project-buttons > div {
+  width: 20vw;
 }
